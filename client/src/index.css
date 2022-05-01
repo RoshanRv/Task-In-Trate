@@ -1,0 +1,363 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* .{
+    color:;
+} */
+
+/* html {
+  scroll-behavior: smooth;
+}
+
+.routine {
+  scroll-behavior: auto;
+} */
+
+.bl {
+  filter: blur(40px);
+  /* color:; */
+}
+
+.blue {
+  background-image: radial-gradient(rgb(82, 241, 121), rgb(0, 176, 245));
+  transition: all;
+}
+.light {
+  background-image: radial-gradient(rgb(73, 218, 243), rgb(0, 127, 245));
+  transition: all;
+}
+.yellow {
+  background-image: radial-gradient(rgb(245, 242, 88), rgb(246, 176, 62));
+  transition: all;
+}
+.green {
+  background-image: radial-gradient(rgb(193, 224, 90), rgb(20, 165, 32));
+  transition: all;
+}
+
+.black {
+  background-image: radial-gradient(rgb(53, 53, 50), rgb(0, 0, 0));
+  transition: all;
+}
+.violet {
+  background-image: radial-gradient(rgb(87, 179, 240), rgb(105, 64, 238));
+  transition: all;
+}
+.s-table {
+  background-image: radial-gradient(rgb(165, 144, 231), rgb(126, 39, 241));
+  transition: all;
+}
+.red {
+  background-image: radial-gradient(rgb(245, 96, 104), rgb(211, 25, 25));
+  transition: all;
+}
+.sudoku {
+  background-image: radial-gradient(rgb(170, 241, 217), rgb(43, 220, 243));
+  transition: all;
+}
+.brown {
+  background-image: radial-gradient(rgb(179, 125, 82), rgb(165, 84, 18));
+  transition: all;
+}
+.five-min {
+  background-image: radial-gradient(rgb(210, 235, 179), rgb(136, 221, 57));
+  transition: all;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  /* color: blue; */
+  /* background-color: blue; */
+}
+
+.vap {
+  animation-name: vapour;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  filter: blur(1px);
+  animation-timing-function: linear;
+}
+
+.sha {
+  box-shadow: -17px 15px 8px 2px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: -17px 15px 8px 2px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: -17px 15px 8px 2px rgba(0, 0, 0, 0.68);
+}
+
+.sha-sm {
+  box-shadow: -21px 22px 5px -13px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: -2px 2px 10px 0px rgba(42, 40, 40, 0.68);
+  -moz-box-shadow: -21px 22px 5px -13px rgba(0, 0, 0, 0.68);
+}
+
+.va {
+  animation-name: vap;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  filter: blur(1px);
+  animation-timing-function: linear;
+}
+
+.txt {
+  white-space: pre-wrap;
+}
+
+.brain {
+  animation-name: brain;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  z-index: 50;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  animation-delay: 1s;
+  top: calc(50% - 60px);
+
+  /* animation-iteration-count: infinite; */
+}
+
+.float1 {
+  animation: float1 3s ease-in-out infinite;
+  animation-delay: 4s;
+}
+@keyframes float1 {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.float2 {
+  animation: float2 2s ease-in infinite;
+  animation-delay: 4s;
+}
+@keyframes float2 {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-25px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.float3 {
+  animation: float3 3.5s ease-out infinite;
+  animation-delay: 4s;
+}
+@keyframes float3 {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.float4 {
+  animation: float4 3s ease-in-out infinite;
+  animation-delay: 4s;
+}
+@keyframes float4 {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.txt-sha {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.head {
+  animation: head 2s linear 2s;
+  animation-fill-mode: forwards;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+.bg {
+  animation: bg 4s linear 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes head {
+  0% {
+    top: 70%;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}
+@keyframes bg {
+  0% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes brain {
+    0% {
+      transform: rotate(0deg) translateX(calc(100% - 110px)) rotate(0deg)
+        scale(1.5);
+    }
+
+    100% {
+      transform: rotate(360deg) translateX(calc(100% - 110px)) rotate(-360deg)
+        scale(0.3);
+      opacity: 1;
+    }
+  }
+
+  .brain {
+    top: calc(50% - 55px);
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes brain {
+    0% {
+      transform: rotate(0deg) translateX(calc(100% - 120px)) rotate(0deg)
+        scale(1.8);
+    }
+    100% {
+      transform: rotate(360deg) translateX(calc(100% - 120px)) rotate(-360deg)
+        scale(0.3);
+      opacity: 1;
+    }
+  }
+
+  .brain {
+    top: calc(50% - 63px);
+  }
+}
+
+@keyframes vapour {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+@keyframes vap {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+.ani {
+  animation-name: list;
+  animation-duration: 200ms;
+}
+
+@keyframes list {
+  0% {
+    transform: scale(1.1);
+  }
+  25% {
+    transform: scale(5.6);
+  }
+  50% {
+    transform: scale(5.6);
+  }
+  75% {
+    transform: scale(5.6);
+  }
+  100% {
+    transform: scale(5.6);
+  }
+}
+
+/*              Excercies            */
+
+.hero-img {
+  animation: hero 1.5s ease-in;
+}
+
+@keyframes hero {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.cover {
+  animation: coverl 1s ease-in 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes coverl {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.hero-head {
+  animation: hero-head 1.5s ease-in 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hero-head {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 50%;
+  }
+}
